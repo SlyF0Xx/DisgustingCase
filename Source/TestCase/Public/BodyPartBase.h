@@ -35,6 +35,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Abilities)
 	float damage_multiplier = 0.0f;
 
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	FText get_name();
+
 	ATestCaseCharacter* owner;
 	bool is_blocked = false;
 };
